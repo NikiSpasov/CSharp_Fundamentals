@@ -28,14 +28,12 @@ class Program
         double area = Math.PI * Math.Pow(radius, 2);
         Console.WriteLine($"{area:f2}");
     }
-
     private static void FindTheAreaOfSquare()
     {
         double side = double.Parse(Console.ReadLine());
         double area = Math.Pow(side, 2);
         Console.WriteLine($"{area:f2}");
     }
-
     private static void FindTheAreaOfRectangle()
     {
         double width = double.Parse(Console.ReadLine());
@@ -44,7 +42,6 @@ class Program
         Console.WriteLine($"{area:f2}");
 
     }
-
     private static void FindTheAreaOfTriangle()
     {
         double side = double.Parse(Console.ReadLine());
