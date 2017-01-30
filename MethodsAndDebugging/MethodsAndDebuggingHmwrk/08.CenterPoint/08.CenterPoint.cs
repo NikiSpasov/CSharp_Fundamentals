@@ -2,21 +2,31 @@
 
 class Program
 {
-    public static void PritnClosestPointToTheCenter(int x, int y, int x1, int y1)
+    private static bool IsCloserToZero(double x1, double y1, double x2, double y2)
     {
 
-
-        Console.WriteLine("({0}, {1})");
+        double dist1 = Math.Sqrt(Math.Pow(x1, 2) + Math.Pow(y1, 2));
+        double dist2 = Math.Sqrt(Math.Pow(x2, 2) + Math.Pow(y2, 2));
+        bool isCloserToZero = dist1 <= dist2;
+        return isCloserToZero;
     }
+
     static void Main()
     {
-        int x = int.Parse(Console.ReadLine());
-        int y = int.Parse(Console.ReadLine());
-        int x1 = int.Parse(Console.ReadLine());
-        int y1 = int.Parse(Console.ReadLine());
+        var x1 = double.Parse(Console.ReadLine());
+        var y1 = double.Parse(Console.ReadLine());
+        var x2 = double.Parse(Console.ReadLine());
+        var y2 = double.Parse(Console.ReadLine());
 
-
-        PritnClosestPointToTheCenter(x, y, x1, y1);
+        if (IsCloserToZero(x1, y1, x2, y2))
+        {
+            Console.WriteLine($"({x1}, {y1})");
+        }
+        else
+        {
+            Console.WriteLine($"({x2}, {y2})");
+        }
     }
 }
+
 
