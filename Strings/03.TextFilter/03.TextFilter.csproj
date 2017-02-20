@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E79A3024-1344-40A8-8220-485F443F52C8}</ProjectGuid>
+    <ProjectGuid>{0AA957C7-A6F0-4D7C-95A0-85C3DF780A48}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_00.Strings</RootNamespace>
-    <AssemblyName>00.Strings</AssemblyName>
+    <RootNamespace>_03.TextFilter</RootNamespace>
+    <AssemblyName>03.TextFilter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="00.Strings.cs" />
+    <Compile Include="03.TextFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

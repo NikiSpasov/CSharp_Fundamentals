@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E79A3024-1344-40A8-8220-485F443F52C8}</ProjectGuid>
+    <ProjectGuid>{7891A28A-E79C-48A7-94F5-85BA89867CF0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_00.Strings</RootNamespace>
-    <AssemblyName>00.Strings</AssemblyName>
+    <RootNamespace>_02.CountSubstringOccurences</RootNamespace>
+    <AssemblyName>02.CountSubstringOccurences</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="00.Strings.cs" />
+    <Compile Include="02.CountSubstringOccurences.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
