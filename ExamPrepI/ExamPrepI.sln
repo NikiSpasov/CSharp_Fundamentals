@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.1.SinoTheWalker", "01.1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SoftUniKaraoke", "02.SoftUniKaraoke\02.SoftUniKaraoke.csproj", "{9632F19D-15F9-4373-AFAD-CCE2CA2A6265}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.1SoftUniKaraoke", "02.1SoftUniKaraoke\02.1SoftUniKaraoke.csproj", "{559517E6-4306-444F-9256-80828CC24162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Endurance Rally", "03.Endurance Rally\03.Endurance Rally.csproj", "{E9EC5633-0D9C-4686-A018-7959F115066A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{9632F19D-15F9-4373-AFAD-CCE2CA2A6265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9632F19D-15F9-4373-AFAD-CCE2CA2A6265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9632F19D-15F9-4373-AFAD-CCE2CA2A6265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559517E6-4306-444F-9256-80828CC24162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559517E6-4306-444F-9256-80828CC24162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559517E6-4306-444F-9256-80828CC24162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559517E6-4306-444F-9256-80828CC24162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9EC5633-0D9C-4686-A018-7959F115066A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9EC5633-0D9C-4686-A018-7959F115066A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9EC5633-0D9C-4686-A018-7959F115066A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9EC5633-0D9C-4686-A018-7959F115066A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

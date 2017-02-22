@@ -47,9 +47,23 @@ class Program
     {
 
         List<Singer> singers = ListSingers();
-
+        Dictionary<string, int> dictSing = new Dictionary<string, int>();
+        foreach (var singer in singers)
+        {
+            if (dictSing.ContainsKey(singer.Name))
+            {
+                if (singer.Awards == singer.Awards)
+                {
+                    continue;
+                }
+                else
+                {
+                    singer.Awards
+                }
+            }
+            
+        }
     }
-
 }
 //        if (singersList.Count == 0)
 //        {
