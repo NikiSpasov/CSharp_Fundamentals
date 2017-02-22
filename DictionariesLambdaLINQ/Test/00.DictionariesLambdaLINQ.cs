@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Test
 {
-    class Test
+    class DictionariesLambdaLINQ
     {
         static void Main()
         {

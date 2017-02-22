@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Phonebook", "01.Phonebook\01.Phonebook.csproj", "{1CB44BC1-260F-4C11-B7BD-CE41853E6293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{24C48CD1-E1FE-429B-A0B8-1279A408A544}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.DictionariesLambdaLINQ", "Test\00.DictionariesLambdaLINQ.csproj", "{24C48CD1-E1FE-429B-A0B8-1279A408A544}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PhoneBookUpgrade", "02.PhoneBookUpgrade\02.PhoneBookUpgrade.csproj", "{8BD1AE78-6C9E-4D43-99CB-07CA40D5E7F1}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.AMinerTask", "03.AMinerT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FixEmails", "04.FixEmails\04.FixEmails.csproj", "{D1B38677-44D3-4C15-B84B-ABBA96D0B6F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.HandsOfCards", "05.\05.HandsOfCards.csproj", "{41FF9455-9281-4986-8463-CDAC507285B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.HandsOfCards", "05\05.HandsOfCards.csproj", "{41FF9455-9281-4986-8463-CDAC507285B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.LogsAggregator", "06.UserLogs\08.LogsAggregator.csproj", "{108007CB-5F0A-406D-A753-08F2B912AAF3}"
 EndProject
