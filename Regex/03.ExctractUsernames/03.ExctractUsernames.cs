@@ -1,33 +1,29 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-class Program
+class ValidUsernames
 {
     static void Main()
     {
-        var text = Console.ReadLine()
-            .Split(new char[] { '/', '\\', '(', ')', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        int maxCnt = 0;
-        string longestWord = string.Empty;
-        foreach (var user in text)
+        string input = Console.ReadLine();
+        string userName = @"(?<=[\s\/\\(\)]|^)([A-Za-z]\w{2,24})(?=[\s\/\\(\)]|$)";
+        MatchCollection matches = Regex.Matches(input, userName);
+        List<string> valid = new List<string>();
+
+        int biggestSum = 0;
+        int pos = 0;
+        for (int i = 0; i < matches.Count - 1; i++)
         {
-            int lenght = user.Length;
-            if (lenght<maxCnt)
+            int currSum = matches[i].Length + matches[i + 1].Length;
+            if (currSum > biggestSum)
             {
-                maxCnt = lenght;
-                longestWord = user;
+                biggestSum = currSum;
+                pos = i;
             }
-
         }
-        Console.WriteLine(longestWord);
 
-        
-        //var matches = regex.Matches(text);
-        //foreach (Match users in matches)
-        //{
-          //  Console.WriteLine(users);
-        //}
-
+        Console.WriteLine(matches[pos]);
+        Console.WriteLine(matches[pos + 1]);
     }
 }

@@ -1,15 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _03.Endurance_Rally
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+        var driversNames = Console.ReadLine()
+            .Split(' ');
+
+        int[] trackLayout = Console.ReadLine()
+            .Split(' ')
+            .Select(int.Parse)
+            .ToIntArray();
+
+        int[] checkPointIndexes = Console.ReadLine()
+            .Split(' ')
+            .Select(int.Parse)
+            .ToIntArray();
     }
 }
