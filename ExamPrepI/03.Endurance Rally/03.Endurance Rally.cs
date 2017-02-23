@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _03.Endurance_Rally
+class Program
 {
-    class Program
+    static void Main()
     {
+<<<<<<< HEAD
         static void Main(string[] args)
         {
             var driversNames = Console.ReadLine()
@@ -54,5 +51,19 @@ namespace _03.Endurance_Rally
             }
 
         }
+=======
+        var driversNames = Console.ReadLine()
+            .Split(' ');
+
+        int[] trackLayout = Console.ReadLine()
+            .Split(' ')
+            .Select(int.Parse)
+            .ToIntArray();
+
+        int[] checkPointIndexes = Console.ReadLine()
+            .Split(' ')
+            .Select(int.Parse)
+            .ToIntArray();
+>>>>>>> b2091d1054ffe2695f3689156062ef04bb4f45d3
     }
 }

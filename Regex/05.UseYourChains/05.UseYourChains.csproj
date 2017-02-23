@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E79A3024-1344-40A8-8220-485F443F52C8}</ProjectGuid>
+    <ProjectGuid>{3F1ABEC5-7B53-45D8-8D13-76A2796F47E1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_00.Strings</RootNamespace>
-    <AssemblyName>00.Strings</AssemblyName>
+    <RootNamespace>_05.UseYourChains</RootNamespace>
+    <AssemblyName>05.UseYourChains</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="00.Strings.cs" />
+    <Compile Include="05.UseYourChains.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
