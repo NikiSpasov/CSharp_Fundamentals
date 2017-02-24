@@ -5,6 +5,7 @@ namespace _00.Regex
     using System.Text.RegularExpressions;
     using System;
     using System.Linq;
+    using System.Collections.Generic;
 
     class Program
     {
@@ -101,7 +102,7 @@ namespace _00.Regex
 
             //SPLIT:
 
-            //var text = "1,     2                  4   5 6 7";
+            //var text = "1     2                  4   5 6 7";
             //var regex = new Regex(@"\s+");
             //var result = regex
             //    .Split(text)
@@ -112,7 +113,35 @@ namespace _00.Regex
 
 
 
+            //SOME MORE PRACTICE:
 
+
+            string input = "24 June 2014";
+            Regex regex = new Regex(@"\d+");
+            var result = regex.Match(input);
+            Console.WriteLine($"resultIndex: {result.Index} resultLength: {result.Length}");
+
+            //Console.WriteLine(matches.Value);
+            //matches = matches.NextMatch();
+
+            var isMatch = regex.IsMatch(input);
+            Console.WriteLine(isMatch);//true
+
+            List<double> fromMatches = new List<double>();
+            MatchCollection maaaches = regex.Matches(input);
+            for (int i = 0; i < maaaches.Count; i++)
+            {
+                //Console.Write(maaaches[i] + " ");
+                double currentMatch = double.Parse(maaaches[i].ToString());
+                fromMatches.Add(currentMatch);
+
+                Console.WriteLine($"{maaaches[i]} has been added to collection!");
+            }
+            var smetkata = fromMatches.Sum();
+            Console.WriteLine(smetkata);
+
+            string replaced = regex.Replace(input, replacement: "99");
+            Console.WriteLine(replaced);
         }
     }
 }
