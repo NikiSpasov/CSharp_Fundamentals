@@ -116,32 +116,37 @@ namespace _00.Regex
             //SOME MORE PRACTICE:
 
 
-            string input = "24 June 2014";
-            Regex regex = new Regex(@"\d+");
+            //string input = "24 June 2014";
+            //Regex regex = new Regex(@"\d+");
+            //var result = regex.Match(input);
+            //Console.WriteLine($"resultIndex: {result.Index} resultLength: {result.Length}");
+
+            ////Console.WriteLine(matches.Value);
+            ////matches = matches.NextMatch();
+
+            //var isMatch = regex.IsMatch(input);
+            //Console.WriteLine(isMatch);//true
+
+            //List<double> fromMatches = new List<double>();
+            //MatchCollection maaaches = regex.Matches(input);
+            //for (int i = 0; i < maaaches.Count; i++)
+            //{
+            //    //Console.Write(maaaches[i] + " ");
+            //    double currentMatch = double.Parse(maaaches[i].ToString());
+            //    fromMatches.Add(currentMatch);
+
+            //    Console.WriteLine($"{maaaches[i]} has been added to collection!");
+            //}
+            //var smetkata = fromMatches.Sum();
+            //Console.WriteLine(smetkata);
+
+            //string replaced = regex.Replace(input, replacement: "99");
+            //Console.WriteLine(replaced); //99 June 99
+
+            string input = "#vankata";
+            Regex regex = new Regex(@"\w+");
             var result = regex.Match(input);
-            Console.WriteLine($"resultIndex: {result.Index} resultLength: {result.Length}");
-
-            //Console.WriteLine(matches.Value);
-            //matches = matches.NextMatch();
-
-            var isMatch = regex.IsMatch(input);
-            Console.WriteLine(isMatch);//true
-
-            List<double> fromMatches = new List<double>();
-            MatchCollection maaaches = regex.Matches(input);
-            for (int i = 0; i < maaaches.Count; i++)
-            {
-                //Console.Write(maaaches[i] + " ");
-                double currentMatch = double.Parse(maaaches[i].ToString());
-                fromMatches.Add(currentMatch);
-
-                Console.WriteLine($"{maaaches[i]} has been added to collection!");
-            }
-            var smetkata = fromMatches.Sum();
-            Console.WriteLine(smetkata);
-
-            string replaced = regex.Replace(input, replacement: "99");
-            Console.WriteLine(replaced);
+            Console.WriteLine(result);
         }
     }
 }
