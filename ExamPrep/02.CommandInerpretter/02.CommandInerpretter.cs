@@ -42,9 +42,9 @@
                 }
                 else if (currentCommand[0].Equals("sort"))
                 {
-                    start = int.Parse(currentCommand[2]);
-                    count = int.Parse(currentCommand[4]);
-                    if (start < 0 || count < 1 || start > input.Count - 1)
+                    bool bStart = int.TryParse(currentCommand[2], out start);
+                    bool bCount = int.TryParse(currentCommand[4], out count);
+                    if (bStart == false || bCount == false || start < 0 || count < 1 || start > input.Count - 1)
                     {
                         Console.WriteLine("Invalid input parameters.");
                         command = Console.ReadLine();
@@ -61,8 +61,8 @@
                 }
                 else if (currentCommand[0].Equals("rollLeft"))
                 {
-                    count = int.Parse(currentCommand[1]);
-                    if (count < 0)
+                    bool bCount = int.TryParse(currentCommand[1], out count);
+                    if (!bCount || count < 0)
                     {
                         Console.WriteLine("Invalid input parameters.");
                         command = Console.ReadLine();
@@ -76,8 +76,8 @@
                 }
                 else if (currentCommand[0].Equals("rollRight"))
                 {
-                    count = int.Parse(currentCommand[1]);
-                    if (count < 0)
+                    bool bCount = int.TryParse(currentCommand[1], out count);
+                    if (!bCount || count < 0)
                     {
                         Console.WriteLine("Invalid input parameters.");
                         command = Console.ReadLine();
@@ -88,6 +88,7 @@
                     {
                         input.Insert(0, input[input.Count - 1]);
                         input.RemoveAt(input.Count - 1);
+ 
                     }
                 }
                 command = Console.ReadLine(); 
