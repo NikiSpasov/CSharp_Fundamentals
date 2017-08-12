@@ -23,5 +23,3 @@ class Program
         Console.WriteLine($"Time Arrival: {arriveHour:00}:{arriveMinute:00}:{arriveSecond:00}");
     }
 }
-
-100/100
