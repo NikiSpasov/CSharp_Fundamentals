@@ -25,7 +25,6 @@ class Program
         var a = fileInfo.Directory;
         Console.WriteLine(a);
 
-
         //Directory Class
 
         Directory.CreateDirectory("Test");
